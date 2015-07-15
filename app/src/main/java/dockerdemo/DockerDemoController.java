@@ -12,6 +12,6 @@ public class DockerDemoController {
 
     @RequestMapping(method = RequestMethod.GET)
     public ResponseEntity<String> get() {
-        return new ResponseEntity<>("hello zuto", HttpStatus.OK);
+        return new ResponseEntity<>("hello zuto (2)", HttpStatus.OK);
     }
 }
