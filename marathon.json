@@ -2,11 +2,15 @@
   "container": {
     "type": "DOCKER",
     "docker": {
-      "image": "timborrowdale/docker-demo"
+      "image": "timborrowdale/docker-demo",
+      "network": "BRIDGE",
+      "portMappings": [
+        { "containerPort": 8090, "hostPort": 0, "servicePort": 9000, "protocol": "tcp" }
+      ]
     }
   },
   "id": "/timborrowdale/docker-demo",
-  "instances": 1,
+  "instances": 2,
   "cpus": 0.5,
   "mem": 512,
   "uris": []
