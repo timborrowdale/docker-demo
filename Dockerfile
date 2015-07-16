@@ -8,4 +8,4 @@ ADD app/build/libs/$JAR $JAR
 
 CMD java -jar $JAR
 
-EXPOSE 8080
+EXPOSE 8090
